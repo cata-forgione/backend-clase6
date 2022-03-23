@@ -1,0 +1,9 @@
+#spring:
+#  config:
+#    activate:
+#      on-profie: prod     Ya sabe con el nombre del YML que perfil estamos utilizando
+
+server:
+  port: 8082
+
+message: Hola esta es la configuracion del perfil prod.

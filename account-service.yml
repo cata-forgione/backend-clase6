@@ -1,0 +1,39 @@
+# para reemplazar esto y que funcione config USANDO BOOTSTRAP, agregar en la configuracion del proyecto la siguiente notacion --spring.cloud.bootstrap.enable=true
+server:
+  port: 8080
+
+spring:
+  application:
+    name: account-service
+  cloud:
+    config:
+      enabled: false
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  info:
+    env:
+      enabled: true
+message: Hola esta es la configuracion por defecto.
+
+#con los --- activo otro perfil
+
+---
+#cuando activamos lo siguiente lo que le decimos es que cuando el perfil dev este activado haga cierta cosa
+#spring:
+#  config:
+#    activate:
+#      on-profie: dev
+
+#server:
+#  port: 8081
+
+#message: Hola esta es la configuracion del perfil dev.
+
+#Para usar el perfil dev, en la configuracion del proyecto agregamos la siguiente notacion --spring.profiles.active=dev dev es = al nombre del perfil

@@ -1,0 +1,12 @@
+#spring:
+#  config:
+#    activate:
+#      on-profie: dev     Ya sabe con el nombre del YML que perfil estamos utilizando
+
+server:
+  port: 8081
+
+message: papa.
+
+#Para usar el perfil dev, en la configuracion del proyecto agregamos la siguiente notacion --spring.profiles.active=dev dev es = al nombre del perfil
+
