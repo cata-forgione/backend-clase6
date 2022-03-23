@@ -6,7 +6,7 @@
 server:
   port: 8081
 
-message: papa.
+message: helloooooooooo its me.
 
 #Para usar el perfil dev, en la configuracion del proyecto agregamos la siguiente notacion --spring.profiles.active=dev dev es = al nombre del perfil
 
